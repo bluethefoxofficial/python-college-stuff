@@ -30,25 +30,25 @@ def drawing():
                 print("|"+" ", end="")
         print("|")
                 
+while True:
                 
-                
-r = int(input("Enter the row: "))
-c = int(input("Enter the column: "))
+    r = int(input("Enter the row: "))
+    c = int(input("Enter the column: "))
 
-array_2d[r][c] = 'X'
-drawing()
-
-
-r = int(input("Enter the row: "))
-c = int(input("Enter the column: "))
-
-
-
-if(array_2d[r][c] == '0'):
-    print("You already chose that spot")
-    
-elif(array_2d[r][c] == 'X'):
-    print("That spot is already selected")
-else:
-    array_2d[r][c] = '0'
+    array_2d[r][c] = 'X'
     drawing()
+
+
+    r = int(input("Enter the row: "))
+    c = int(input("Enter the column: "))
+
+
+
+    if(array_2d[r][c] == '0'):
+        print("You already chose that spot")
+    
+    elif(array_2d[r][c] == 'X'):
+        print("That spot is already selected")
+    else:
+        array_2d[r][c] = '0'
+        drawing()
